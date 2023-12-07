@@ -617,5 +617,40 @@ public class BookGenreSelection {
         switch (genre) {
         }
         System.out.println("Thank you for using our book recommendation!");
+  public static main(int num){
+      for(int i=0; i<num;i++)
+      System.out.println("Choose a number of the book you would like to read.")
+
+
+          //ReceiptCalculator
+          import java.util.Scanner;
+
+public class ReceiptCalculator {
+
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask the user to enter the total amount on the receipt
+        System.out.print("Enter the total amount on the receipt: ");
+        double totalAmount = scanner.nextDouble();
+
+        // Calculate the tax (let's assume 10% for this example)
+        double taxRate = 0.10; // 10%
+        double taxAmount = totalAmount * taxRate;
+
+        // Calculate the final amount by adding tax to the total amount
+        double finalAmount = totalAmount + taxAmount;
+
+        // Display the final amount with tax
+        System.out.println("Total amount with tax: $" + finalAmount);
+
+        // Close the scanner to prevent resource leak
+        scanner.close();
+    }
+}
+
+    
+    
     }
 }
