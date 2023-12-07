@@ -616,6 +616,6 @@ public class BookGenreSelection {
     private static void displayBookInformation(String genre, int bookNumber) {
         switch (genre) {
         }
-        System.out.println("Thank you for using the book store!");
+        System.out.println("Thank you for using our book recommendation!");
     }
 }
