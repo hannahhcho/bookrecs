@@ -617,17 +617,15 @@ public class BookGenreSelection {
         switch (genre) {
         }
         System.out.println("Thank you for using our book recommendation!");
+        int num = scanner.nextInt();
 
-            for(int i=0; i<num; i++)
+
+        for(int i=0; i<num;i++)
                 System.out.println("Choose a number of the book you would like to read.");
 
 
             //ReceiptCalculator
-
-        public class ReceiptCalculator {
-                public static void main(String[] args) {
-                    // Create a Scanner object to read input from the user
-                    Scanner scanner = new Scanner(System.in);
+                  Scanner scanner = new Scanner(System.in);
 
                     // Ask the user to enter the total amount on the receipt
                     System.out.print("Enter the total amount on the receipt: ");
@@ -647,8 +645,3 @@ public class BookGenreSelection {
                     scanner.close();
                 }
             }
-
-
-
-        }
-    }
