@@ -595,7 +595,7 @@ public class BookGenreSelection {
 
         // Ask if the user wants to see prices for other books
         System.out.println("Do you want to see prices for other books? (yes/no)");
-        scanner.nextLine(); // Consume the newline character left by nextInt()
+        scanner.nextLine(); 
         String response = scanner.nextLine().toLowerCase();
 
         if (!response.equals("yes")) {
