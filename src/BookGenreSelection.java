@@ -591,6 +591,31 @@ public class BookGenreSelection {
                 else
                     System.out.println("Invalid Number.");
                 break;
+    }
+
+        // Ask if the user wants to see prices for other books
+        System.out.println("Do you want to see prices for other books? (yes/no)");
+        scanner.nextLine(); // Consume the newline character left by nextInt()
+        String response = scanner.nextLine().toLowerCase();
+
+        if (!response.equals("yes")) {
+            boolean BookGenreSelection = false;
         }
+    }
+
+    private static boolean isValidGenre(String genre) {
+        String[] genres = {"Fantasy Fiction", "Historical Fiction", "Thriller/Horror", "Non-Fiction", "Comic Books", "Self-Help", "Young Adult", "Manga", "Mystery", "Cook Books", "Adult-Dark Romance"};
+        for (String validGenre : genres) {
+            if (validGenre.equals(genre)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static void displayBookInformation(String genre, int bookNumber) {
+        switch (genre) {
+        }
+        System.out.println("Thank you for using the book store!");
     }
 }
