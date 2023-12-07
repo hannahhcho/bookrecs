@@ -39,7 +39,7 @@ public class BookGenreSelection {
             System.out.println("8. Manga");
             System.out.println("9. Mystery");
             System.out.println("10. Cook Books");
-            System.out.println("11. Smut");
+            System.out.println("11. Adult-Dark Romance");
 
             // Get the user's choice for the book genre
             System.out.print("\nEnter your choice: ");
@@ -91,7 +91,7 @@ public class BookGenreSelection {
                     validGenreSelected = true;
                     break;
                 case 11:
-                    selectedGenre = "Smut";
+                    selectedGenre = "Adult-Dark Romance";
                     validGenreSelected = true;
                     break;
                 default:
@@ -339,7 +339,7 @@ public class BookGenreSelection {
                     System.out.println("   ~ Is a vegetarian cookbook that celebrates the flavors and variety of plant-based cuisine. It provides a collection of innovative and \nwholesome recipes, incorporating a diverse range of vegetables, grains, and legumes. The book emphasizes the use of seasonal and fresh ingredients to create delicious vegetarian meals, \nmaking it a valuable resource for both experienced and aspiring vegetarians looking to expand their cooking repertoire.");
                 }
                 break;
-            case "Smut":
+            case "Adult-Dark Romance":
                 System.out.println("1. Haunting Adeline by H.D. Carlton");
                 System.out.println("2. A Touch of Darkness by Scarlett St. Clair");
                 System.out.println("3. Twisted Love by Ana Huang");
@@ -572,7 +572,7 @@ public class BookGenreSelection {
                     System.out.println("Invalid Number.");
                 break;
 
-            case "Smut":
+            case "Adult-Dark Romance":
                 if (bookNumber == 1)
                     System.out.println("Haunting Adeline by H. D. Carlton \nHardcover: $36 \nPaperback: $13.13");
 
