@@ -1,11 +1,11 @@
-public class calculator {public static void main(String[] args) {
-    BookGenreSelection objA = new BookGenreSelection();
-    objA.recommendBooks();
+ public static void main(String[] args) {
+        BookGenreSelection objA = new BookGenreSelection();
+        objA.recommendBooks();
 
-    Summary objB = new Summary();
-    objB.recommendBooks2();
+        Summary objB = new Summary();
+        objB.recommendBooks2();
 
-}
+    }
 
     private static void recommendBooks (String genre) {
         System.out.println("\nChoose a number for the book price?");
@@ -117,26 +117,175 @@ public class calculator {public static void main(String[] args) {
                 else
                     System.out.println("Invalid Number.");
                 break;
-//ReceiptCalculator
-                  Scanner scanner = new Scanner(System.in);
 
-                    // Ask the user to enter the total amount on the receipt
-                    System.out.print("Enter the total amount on the receipt: ");
-                    double totalAmount = scanner.nextDouble();
+            case "Self-Help":
+                if (bookNumber == 1)
+                    System.out.println("The Mountain is You by Brianna Wiest \nHardcover: $35.11 \nPaperback: $17.99");
 
-                    // Calculate the tax (let's assume 10% for this example)
-                    double taxRate = 0.10; // 10%
-                    double taxAmount = totalAmount * taxRate;
+                else if (bookNumber == 2)
+                    System.out.println("Atomic Habits by James Clear \nHardcover: $13.79 \nPaperback: $6.79");
 
-                    // Calculate the final amount by adding tax to the total amount
-                    double finalAmount = totalAmount + taxAmount;
+                else if (bookNumber == 3)
+                    System.out.println("The Power of Self-Discipline by Brian Tracy \nHardcover:10.95 \nPaperback: $4.46");
 
-                    // Display the final amount with tax
-                    System.out.println("Total amount with tax: $" + finalAmount);
+                else if (bookNumber == 4)
+                    System.out.println("The Power of Letting Go by John Purkiss \nHardcover: $15.99 \nPaperback: $9.36");
 
-                    // Close the scanner to prevent resource leak
-                    scanner.close();
-                }
+                else if (bookNumber == 5)
+                    System.out.println("The Power of Now by Eckhart Tolle \nHardcover: $12.99 \nPaperback: $4.68");
+
+                else
+                    System.out.println("Invalid Number.");
+                break;
+
+            case "Young Adult":
+                if (bookNumber == 1)
+                    System.out.println("The Summer of Broken Rules by K.L. Walther  \nHardcover: $8.77 \nPaperback: $8.77");
+
+                else if (bookNumber == 2)
+                    System.out.println("The Ballad of Songbirds and Snakes by Suzanne Collins \nHardcover: $21.99 \nPaperback: $15.59");
+
+                else if (bookNumber == 3)
+                    System.out.println("A Wizard of Earthsea by Ursula K. Le Guin \nHardcover:58.09 \nPaperback: $9.89");
+
+                else if (bookNumber == 4)
+                    System.out.println("The Hobbit by John Tolkien \nHardcover: $6.49 \nPaperback: $2.99");
+
+                else if (bookNumber == 5)
+                    System.out.println("Lord of the Flies by William Golding \nHardcover: $10.95 \nPaperback: $2.99");
+
+                else
+                    System.out.println("Invalid Number.");
+                break;
+
+            case "Manga":
+                if (bookNumber == 1)
+                    System.out.println("One Piece by Eiichiro Oda  \nHardcover: $19.99 \nPaperback: $10.99");
+
+                else if (bookNumber == 2)
+                    System.out.println("Naruto by Masashi Kishimoto  \nHardcover: $13.99 \nPaperback: $11.50");
+
+                else if (bookNumber == 3)
+                    System.out.println("Sand Land by Akira Toriyama \nHardcover: $16.99 \nPaperback: $11.99");
+
+                else if (bookNumber == 4)
+                    System.out.println("Shuna's Journey by Hayao Miyazaki \nHardcover: $21.09 \nPaperback: $19.36");
+
+                else if (bookNumber == 5)
+                    System.out.println("All You Need Is Kill by Hiroshi Sakurazaka \nHardcover: $16.99 \nPaperback: $13.99");
+
+                else
+                    System.out.println("Invalid Number.");
+                break;
+
+            case "Mystery":
+                if (bookNumber == 1)
+                    System.out.println("A Good Girl's Guide to Murder by Holly Jackson \nHardcover: $12.88 \nPaperback: $10.99");
+
+                else if (bookNumber == 2)
+                    System.out.println("The Surgeon by Tess Gerritsen \nHardcover: $6 \nPaperback: $1.26");
+
+                else if (bookNumber == 3)
+                    System.out.println("One of Us is Lying by Karen M. McManus \nHardcover: $10.36 \nPaperback: $9.50");
+
+                else if (bookNumber == 4)
+                    System.out.println("The Silent Patient by Alex Michaelides \nHardcover: $14.70 \nPaperback: $5.61");
+
+                else if (bookNumber == 5)
+                    System.out.println("We Were Liars by E. Lockhart \nHardcover: $14.29 \nPaperback: $5.99");
+
+                else
+                    System.out.println("Invalid Number.");
+                break;
+
+            case "Cook Books":
+                if (bookNumber == 1)
+                    System.out.println("Dessert Person by Claire Saffitz \nHardcover: $20.49 \nPaperback: $48.49");
+
+                else if (bookNumber == 2)
+                    System.out.println("From Crook to Cook by Snoop Dog \nHardcover: $14.08 \nPaperback: $24.95");
+
+                else if (bookNumber == 3)
+                    System.out.println("Salt Fat Acid Heat by Samin Nosrat \nHardcover: $26.87 \nPaperback: $20");
+
+                else if (bookNumber == 4)
+                    System.out.println("Half Baked Harvest by Tieghan Gerard \nHardcover: $29.99 \nPaperback: $23.99");
+
+                else if (bookNumber == 5)
+                    System.out.println("The Modern Vegetarian Kitchen by Peter Berley \nHardcover: $31 \nPaperback: $24.99");
+
+                else
+                    System.out.println("Invalid Number.");
+                break;
+
+            case "Adult-Dark Romance":
+                if (bookNumber == 1)
+                    System.out.println("Haunting Adeline by H. D. Carlton \nHardcover: $36 \nPaperback: $13.13");
+
+                else if (bookNumber == 2)
+                    System.out.println("A Touch of Darkness by Scarlett St. Clair \nHardcover: $21.38 \nPaperback: $9.99");
+
+                else if (bookNumber == 3)
+                    System.out.println("Twisted Love by Ana Huang \nHardcover: $24 \nPaperback: $10.59");
+
+                else if (bookNumber == 4)
+                    System.out.println("Twisted Hate by Ana Huang \nHardcover: $25 \nPaperback: $10.99");
+
+                else if (bookNumber == 5)
+                    System.out.println("Twisted Games by Ana Huang \nHardcover: $23 \nPaperback: $10.21");
+
+                else
+                    System.out.println("Invalid Number.");
+                break;
+        }
+
+        // Ask if the user wants to see prices for other books
+        System.out.println("Do you want to see prices for other books? (yes/no)");
+        scanner.nextLine();
+        String response = scanner.nextLine().toLowerCase();
+
+        if (!response.equals("yes")) {
+            boolean BookGenreSelection = false;
+        }
+    }
+
+    private static boolean isValidGenre(String genre) {
+        String[] genres = {"Fantasy Fiction", "Historical Fiction", "Thriller/Horror", "Non-Fiction", "Comic Books", "Self-Help", "Young Adult", "Manga", "Mystery", "Cook Books", "Adult-Dark Romance"};
+        for (String validGenre : genres) {
+            if (validGenre.equals(genre)) {
+                return true;
             }
+        }
+        return false;
+    }
 
+    private static void displayBookInformation(String genre, int bookNumber) {
+        switch (genre) {
+        }
+        System.out.println("Thank you for using our book recommendation!");
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+
+
+        for(int i=0; i<num;i++)
+            System.out.println("Choose a number of the book you would like to read.");
+
+        // Ask the user to enter the total amount on the receipt
+        System.out.print("Enter the total amount on the receipt: ");
+        double totalAmount = scanner.nextDouble();
+
+        // Calculate the tax (let's assume 10% for this example)
+        double taxRate = 0.10; // 10%
+        double taxAmount = totalAmount * taxRate;
+
+        // Calculate the final amount by adding tax to the total amount
+        double finalAmount = totalAmount + taxAmount;
+
+        // Display the final amount with tax
+        System.out.println("Total amount with tax: $" + finalAmount);
+
+        // Close the scanner to prevent resource leak
+        scanner.close();
+    }
 }
+
