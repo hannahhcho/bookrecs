@@ -1,24 +1,21 @@
- public static void main(String[] args) {
-        BookGenreSelection objA = new BookGenreSelection();
-        objA.recommendBooks();
+package comm.Bookrecs;
 
-        Summary objB = new Summary();
-        objB.recommendBooks2();
+import java.util.Scanner;
+public class Receipt {
+    public static void main(String[] args) {
+        // Assume Summary class is used appropriately
+        //String genre = Summary.main(args);
+        String genre = Summary.getGenre();
 
-    }
-
-    private static void recommendBooks (String genre) {
-        System.out.println("\nChoose a number for the book price?");
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("\nChoose a number for the book price?");
         int bookNumber = scanner.nextInt();
-
-        while(bookNumber < 1 || bookNumber > 5) {
+        while (bookNumber < 1 || bookNumber > 5) {
             System.out.println("\nInvalid Number. Please choose a valid number for the book price.");
             bookNumber = scanner.nextInt();
         }
         switch (genre) {
-
 
             case "Fantasy Fiction":
                 if (bookNumber == 1)
@@ -238,54 +235,39 @@
                     System.out.println("Invalid Number.");
                 break;
         }
+        scanner = new Scanner(System.in);
+        //genre = Summary.main(args);
+        genre = Summary.getGenre();
 
-        // Ask if the user wants to see prices for other books
-        System.out.println("Do you want to see prices for other books? (yes/no)");
-        scanner.nextLine();
-        String response = scanner.nextLine().toLowerCase();
+        scanner = new Scanner(System.in);
 
-        if (!response.equals("yes")) {
-            boolean BookGenreSelection = false;
-        }
-    }
+        double totalCost = 0.0;
 
-    private static boolean isValidGenre(String genre) {
-        String[] genres = {"Fantasy Fiction", "Historical Fiction", "Thriller/Horror", "Non-Fiction", "Comic Books", "Self-Help", "Young Adult", "Manga", "Mystery", "Cook Books", "Adult-Dark Romance"};
-        for (String validGenre : genres) {
-            if (validGenre.equals(genre)) {
-                return true;
+        do {
+            System.out.println("\nChoose a number for the book price?");
+            bookNumber = scanner.nextInt();
+
+            while (bookNumber < 1 || bookNumber > 5) {
+                System.out.println("\nInvalid Number. Please choose a valid number for the book price.");
+                bookNumber = scanner.nextInt();
             }
-        }
-        return false;
+
+            totalCost += getBookPrice(genre, bookNumber);
+
+            System.out.print("If you would like another book, please input the number of the book, if not say 'No': ");
+            String userChoice = scanner.next().toLowerCase();
+
+            if ("no".equals(userChoice)) {
+                break;
+            }
+        } while (true);
+
+        System.out.println("Okay, the total is: $" + totalCost);
+        System.out.println("Thank you for using the book receipt system!");
     }
 
-    private static void displayBookInformation(String genre, int bookNumber) {
-        switch (genre) {
-        }
-        System.out.println("Thank you for using our book recommendation!");
-        Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
-
-
-        for(int i=0; i<num;i++)
-            System.out.println("Choose a number of the book you would like to read.");
-
-        // Ask the user to enter the total amount on the receipt
-        System.out.print("Enter the total amount on the receipt: ");
-        double totalAmount = scanner.nextDouble();
-
-        // Calculate the tax (let's assume 10% for this example)
-        double taxRate = 0.10; // 10%
-        double taxAmount = totalAmount * taxRate;
-
-        // Calculate the final amount by adding tax to the total amount
-        double finalAmount = totalAmount + taxAmount;
-
-        // Display the final amount with tax
-        System.out.println("Total amount with tax: $" + finalAmount);
-
-        // Close the scanner to prevent resource leak
-        scanner.close();
+    private static double getBookPrice(String genre, int bookNumber) {
+        return 0.0;
     }
 }
 
