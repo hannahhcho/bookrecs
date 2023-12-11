@@ -235,7 +235,7 @@ public class Summary {
                     System.out.println("   ~ Is a vegetarian cookbook that celebrates the flavors and variety of plant-based cuisine. It provides a collection of innovative and \nwholesome recipes, incorporating a diverse range of vegetables, grains, and legumes. The book emphasizes the use of seasonal and fresh ingredients to create delicious vegetarian meals, \nmaking it a valuable resource for both experienced and aspiring vegetarians looking to expand their cooking repertoire.");
                 }
                 break;
-            case "Romance":
+            case "Adult-Dark Romance":
                 System.out.println("1. Haunting Adeline by H.D. Carlton");
                 System.out.println("2. A Touch of Darkness by Scarlett St. Clair");
                 System.out.println("3. Twisted Love by Ana Huang");
@@ -262,9 +262,5 @@ public class Summary {
                 System.out.println("\nNo recommendations for the invalid choice.");
                 break;
         }
-    }
-    public static String getGenre() {
-        return "Unknown Genre";
-
     }
 }
