@@ -42,7 +42,7 @@ public class BookGenreSelection extends Summary {
             System.out.println("8. Manga");
             System.out.println("9. Mystery");
             System.out.println("10. Cook Books");
-            System.out.println("11. Romance");
+            System.out.println("11. Adult-Dark Romance");
 
             // Get the user's choice for the book genre
             System.out.print("\nEnter your choice: ");
@@ -94,7 +94,7 @@ public class BookGenreSelection extends Summary {
                     validGenreSelected = true;
                     break;
                 case 11:
-                    selectedGenre = "Romance";
+                    selectedGenre = "Adult-Dark Romance";
                     validGenreSelected = true;
                     break;
                 default:
