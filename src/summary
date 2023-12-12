@@ -266,4 +266,8 @@ public class Summary {
                 break;
         }
     }
+    public static String getGenre() {
+        return "Unknown Genre";
+
+    }
 }
